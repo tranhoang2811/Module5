@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex60</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="container">
+        <ul>
+            <li> <a href="#">HOME</a></li>
+            <li> <a href="#">HTML</a></li>
+            <li id="css-menu"> <a href="#">CSS</a>
+                <ul id="css-submenu">
+                    <li> <a href="#">CSS CĂN BẢN</a></li>
+                    <li> <a href="#">GIAO DIỆN VỚI CSS</a></li>
+                    <li> <a href="#">CSS NÂNG CAO</a></li>
+                </ul>
+            </li>
+            <li id="javascript-menu"> <a href="#">JAVASCRIPT</a>
+                <ul id="javascript-submenu">
+                    <li> <a href="#">LESSON 01</a></li>
+                    <li> <a href="#">LESSON 02</a></li>
+                    <li> <a href="#">LESSON 03</a></li>
+                </ul>
+            </li>
+            <li> <a href="#">HTML DOM</a></li>
+            <li> <a href="#">NGÔN NGỮ ASP</a></li>
+        </ul>
+    </div>
+    <script>
+        function onMouseEnter(container) {
+            const menu = document.getElementById(`${container}-submenu`);
+            menu.style.display = "block";
+        }
+        function onMouseLeave(container) {
+            const menu = document.getElementById(`${container}-submenu`);
+            menu.style.display = "none";
+        }
+
+        const css = document.getElementById("css-menu");
+        css.addEventListener("mouseenter", () => onMouseEnter("css"));
+        css.addEventListener("mouseleave", () => onMouseLeave("css"));
+
+        const javascript = document.getElementById("javascript-menu");
+        javascript.addEventListener("mouseenter", () => onMouseEnter("javascript"));
+        javascript.addEventListener("mouseleave", () => onMouseLeave("javascript"));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+html,
+body {
+    height: 100%;
+    background-color: #000080;
+    color: white;
+}
+
+.container {
+    width: fit-content;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: fit-content;
+}
+
+main p {
+    display: inline;
+}
+
+footer {
+    padding-top: 24px;
+    text-align: center;
+}
+
+tr,
+td {
+    padding: 8px 0px;
+}
+
+.physician {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: fit-content;
+}
+
+.apgar-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: fit-content;
+}
+
+.apgar-form-group .form-control {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px
+}
+
+.apgar-form-group .form-control input {
+    box-sizing: border-box;
+    width: 40px;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex56</title>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <th colspan="2">
+                    <h1>
+                        Using String Processing Functions
+                    </h1>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>
+                            <label for="inputData">
+                                <h1>
+                                    Input Data:
+                                </h1>
+                            </label>
+                        </legend>
+                        <textarea id="inputData" cols="30" rows="10">
+                        </textarea>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>
+                            <h1>
+                                Result:
+                            </h1>
+                        </legend>
+                        <textarea id="outputData" cols="30" rows="10" readonly>
+                        </textarea>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="focusInput()">
+                        Enter Data
+                    </button>
+                </td>
+                <td>
+                    <button onclick="countUpperCase(inputData.value)">
+                        Count the number of uppercase characters
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="uppercaseString(inputData.value)">
+                        Uppercase display
+                    </button>
+                </td>
+                <td>
+                    <button onclick="breakLineBetweenWords(inputData.value)">
+                        Output one word per line
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="lowercaseString(inputData.value)">
+                        Lowercase display
+                    </button>
+                </td>
+                <td>
+                    <button onclick="countWords(inputData.value)">
+                        Word count
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="countLowerCase(inputData.value)">
+                        Count the number of lowercase characters
+                    </button>
+                </td>
+                <td>
+                    <button onclick="printVowelsAndConsonants(inputData.value)">
+                        Print vowels, consonants
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button>
+                        W3C's String Processing Website
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex61</title>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <table border="1">
+            <caption>
+                <h1>
+                    A Simple Color Picker
+                </h1>
+            </caption>
+            <tr>
+                <td>
+                    <div>
+                        <h4>
+                            Background (enter values from '00' to 'FF')
+                        </h4>
+                        <label for="backgroundRed">
+                            Red
+                        </label>
+                        <input type="text" id="backgroundRed">
+                        <label for="backgroundGreen">
+                            Green
+                        </label>
+                        <input type="text" id="backgroundGreen">
+                        <label for="backgroundBlue">
+                            Blue
+                        </label>
+                        <input type="text" id="backgroundBlue">
+                    </div>
+                    <div>
+                        <h4>
+                            Text (enter values from '00' to 'FF')
+                        </h4>
+                        <label for="textRed">
+                            Red
+                        </label>
+                        <input type="text" id="textRed">
+                        <label for="textGreen">
+                            Green
+                        </label>
+                        <input type="text" id="textGreen">
+                        <label for="textBlue">
+                            Blue
+                        </label>
+                        <input type="text" id="textBlue">
+                    </div>
+                    <div style="margin-top: 8px; text-align: center;">
+                        <button onclick="applyColor()">
+                            Apply
+                        </button>
+                        <button onclick="reloadColor()">
+                            Reload
+                        </button>
+                    </div>
+                </td>
+                <td>
+                    <h3 id="title">Hamlet</h3>
+                    <p style="max-width: 400px; margin: 4px 0;" id="content">
+                        Note: remember to make a lot of projects while you are learning to solidify your understanding of
+                        the concepts. Also, it's important to have the attitude of continuous learning to improve your
+                        skills and be prepared for the fast-paced technology evolution in the industry.
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p>
+            *If you are using Netscape, you won't be able to change the text color
+        </p>
+    </div>
+</body>
+
+</html>

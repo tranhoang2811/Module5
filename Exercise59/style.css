@@ -1,0 +1,63 @@
+html,
+body {
+    height: 100%;
+    background-image: url('./ex59/images/Wrap.jpg');
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.detail {
+    width: 520px;
+    background-color: white;
+}
+
+.side-bar {
+    background-color: black;
+    padding: 8px 6px;
+    width: 120px;
+}
+
+.side-bar h2 {
+    color: white;
+    margin-top: 0;
+}
+
+.side-bar ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.side-bar ul li a {
+    text-decoration: none;
+    color: green
+}
+
+.side-bar ul li:hover a {
+    color: red
+}
+
+header {
+    text-align: center;
+}
+
+strong {
+    color: red;
+}
+
+.section-title {
+    color: green;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 0px 16px;
+}
+
+footer {
+    text-align: center;
+    color: green;
+}

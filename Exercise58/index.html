@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex58</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./ex58/Logo.gif" alt="Logo">
+            <h1>
+                Neonatal Feeding Study
+            </h1>
+        </header>
+        <form>
+            <main>
+                <div style="text-align: right;">
+                    <label for="today">Today is:</label>
+                    <input type="date" name="today" id="today">
+                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="firstName">
+                                1) Name (first, last):
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" name="firstName" id="firstName">
+                            <input type="text" name="lastName" id="lastName">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="medicalRecord">
+                                2) Medical Record#:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" name="medicalRecord" id="medicalRecord">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dateOfBirth">
+                                3) Date of birth:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="date" name="dateOfBirth" id="dateOfBirth">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="physician">
+                                <label for="physician">
+                                    4) Physician:
+                                </label>
+                                <label for="specifyPhysician" style="margin-left: 18px;">
+                                    If other (specify):
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="physician">
+                                <select name="physician" id="physician">
+                                    <option value="warrenAlbert">Dr: Warren Albert</option>
+                                    <option value="mariaAlvarez">Dr: Maria Alvarez</option>
+                                    <option value="karenBrinkman">Dr: Karen Brinkman</option>
+                                    <option value="michealKerry">Dr: Micheal Kerry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <input type="text" name="specifyPhysician" id="specifyPhysician">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top;">
+                            <div>
+                                <label>
+                                    5) 1 Minute APGAR Score:
+                                </label>
+                                <br>
+                                <p style="margin-left: 18px;">
+                                    Each score must be between 0, 1 or 2
+                                </p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="apgar-form-group">
+                                <div class="form-control">
+                                    <label for="activity">Activity</label>
+                                    <input type="number" name="activity" id="activity">
+                                </div>
+                                <div class="form-control">
+                                    <label for="pulse">Pulse</label>
+                                    <input type="number" name="pulse" id="pulse">
+                                </div>
+                                <div class="form-control">
+                                    <label for="grimace">Grimace (Reflex, Imtability)</label>
+                                    <input type="number" name="grimace" id="grimace">
+                                </div>
+                                <div class="form-control">
+                                    <label for="appearance">Appearance (Skin Color)</label>
+                                    <input type="number" name="appearance" id="appearance">
+                                </div>
+                                <div class="form-control">
+                                    <label for="respiration">Respiration</label>
+                                    <input type="number" name="respiration" id="respiration">
+                                </div>
+                                <div class="form-control">
+                                    <label for="total"><b>Total</b></label>
+                                    <input type="number" name="total" id="total" readonly>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="birthWeight">
+                                6) Birth weight (gms):
+                            </label>
+                            <br>
+                            <p style="margin-left: 18px;">
+                                Weights must be >= 1200 gms
+                            </p>
+                        </td>
+                        <td>
+                            <input type="text" name="birthWeight" id="birthWeight">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="parentalConsent">
+                                7) Parental Consent (required):
+                            </label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="parentalConsent" id="parentalConsent" required>
+                        </td>
+                    </tr>
+                </table>
+            </main>
+            <footer>
+                <button onclick="javascript:window.alert('Submit')">Register</button>
+                <button type="reset">Cancel</button>
+            </footer>
+        </form>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

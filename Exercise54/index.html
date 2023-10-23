@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex54</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <table border="1" style="width: 400px;">
+            <tr>
+                <td style="text-align: center;">a:</td>
+                <td>
+                    <input type="text" id="a">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">b:</td>
+                <td>
+                    <input type="text" id="b">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">c:</td>
+                <td>
+                    <input type="text" id="c">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">Result</td>
+                <td>
+                    <p id="result"></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button onclick="getMax(a.value, b.value, c.value)">
+                        MAX
+                    </button>
+                    <button onclick="getMin(a.value, b.value, c.value)">
+                        MIN
+                    </button>
+                    <button onclick="sinA(a.value)">
+                        sin(a)
+                    </button>
+                    <button onclick="cosA(a.value)">
+                        cos(a)
+                    </button>
+                    <button onclick="aPowerToB(a.value, b.value)">
+                        a^b
+                    </button>
+                </td>
+            </tr>
+        </table>
+        <div>
+
+        </div>
+    </div>
+</body>
+
+</html>

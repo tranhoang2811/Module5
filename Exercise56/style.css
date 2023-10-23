@@ -1,0 +1,26 @@
+button {
+    width: 100%;
+}
+
+table {
+    border: 1px solid black;
+    padding: 12px 8px
+}
+
+legend {
+    text-align: left;
+}
+
+th {
+    text-align: left;
+}
+
+h1 {
+    text-align: left;
+    display: inline;
+}
+
+tr,
+td {
+    padding: 8px 0px;
+}

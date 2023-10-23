@@ -1,0 +1,13 @@
+input {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+caption {
+    background-color: #c6f7c6;
+}
+
+#result {
+    color: red;
+    display: inline;
+}

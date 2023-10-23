@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex57</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <td><b>Part Number</b></td>
+                    <td><b>Description</b></td>
+                    <td><b>Price</b></td>
+                    <td><b>Qty</b></td>
+                    <td><b>Item table</b></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>C112</td>
+                    <td>Mouse</td>
+                    <td id="mousePrice">19.95$</td>
+                    <td>
+                        <input type="text" id="mouseQuantity">
+                    </td>
+                    <td>
+                        <input type="text" readonly id="mouseResult">
+                    </td>
+                </tr>
+                <tr>
+                    <td>B124</td>
+                    <td>Keyboard US</td>
+                    <td id="keyboardPrice">29.95$</td>
+                    <td>
+                        <input type="text" id="keyboardQuantity">
+                    </td>
+                    <td>
+                        <input type="text" readonly id="keyboardResult">
+                    </td>
+                </tr>
+                <tr>
+                    <td>U125</td>
+                    <td>USB KingMax</td>
+                    <td id="usbPrice">39.95$</td>
+                    <td>
+                        <input type="text" id="usbQuantity">
+                    </td>
+                    <td>
+                        <input type="text" readonly id="usbResult">
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" style="text-align: right;">Total</td>
+                    <td>
+                        <input type="text" id="result" readonly>
+                    </td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td colspan=5>
+                        <button onclick="sumAll(
+                            [mouseQuantity.value, keyboardQuantity.value, usbQuantity.value], 
+                            ['mousePrice', 'keyboardPrice', 'usbPrice'], 
+                            ['mouseResult', 'keyboardResult', 'usbResult']
+                            )">
+                            Submit
+                        </button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>

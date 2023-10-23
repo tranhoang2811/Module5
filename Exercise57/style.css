@@ -1,0 +1,23 @@
+button {
+    border: 1px solid black;
+    background-color: #eca042;
+    color: white;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+tr, td {
+    padding: 6px 8px;
+}
+
+td:not(:last-child) {
+    text-align: center;
+}
+
+tfoot {
+    border-top: 1px solid black;
+}
